@@ -14,38 +14,43 @@ public class ToyStore {
     public ToyStore() {
     }
 
-    /**перед началом работы необходимо загрузить ф программу из файла список игрушек по форме
-     * образец будет указан в read.me
+    /**перед началом работы необходимо загрузить в программу из файла список игрушек по форме
+     * образец будет указан в readme
      * 
      */
     public void loadToys() {
         String fileName = "toys.txt";
-        try (Scanner scanner = new Scanner(new File(fileName))) {//парсим строки из файла для работы метода
+        try (Scanner scanner = new Scanner(new File(fileName))) {
+            int maxId = 0;
             while (scanner.hasNextLine()) {
                 String[] parts = scanner.nextLine().split(",");
                 String name = parts[0];
                 int id = Integer.parseInt(parts[1]);
                 int probability = Integer.parseInt(parts[2]);
                 int quantity = Integer.parseInt(parts[3]);
-                Toy toy = new Toy(name, id, probability, quantity);
+                Toy toy = new Toy(name, probability, quantity);
                 toys.add(toy);
+                if (id > maxId) {
+                    maxId = id;
+                }
             }
+            Toy.setNextId(maxId + 1); // установка следующего id
             log("Toys loaded from file: " + fileName);
         } catch (FileNotFoundException e) {
             log("Error loading toys: " + e.getMessage());
         }
         System.out.println("Toys loaded from file");
     }
-    public void addToy(String name, int probability, int quantity) {//добавлять новые игрушки можно 
-        //в консоли во время работы, а не только через файл
-        int id = getNextId();
+
+    public void addToy(String name, int probability, int quantity) {//добавление игрушек
+        int id = Toy.getNextId(); // получение следующего id
         Toy toy = new Toy(name, id, probability, quantity);
         toys.add(toy);
         log("New toy added: " + toy.getName() + ", ID: " + toy.getId());
-        System.out.println("Toy "+ toy.getName()+" addiction");
+        System.out.println("Toy "+ toy.getName()+" added");
     }
 
-    public void removeToy(int id) {
+    public void removeToy(int id) {//удаление по ид
         Iterator<Toy> iterator = toys.iterator();
         while (iterator.hasNext()) {
             Toy toy = iterator.next();
@@ -58,13 +63,13 @@ public class ToyStore {
         }
     }
 
-    public void removeAllToys() {
+    public void removeAllToys() {//удвление всех
         toys.clear();
         log("All toys removed");
         System.out.println("All toys removed");
     }
 
-    public void play() {
+    public void play() {//розыгрыш
         List<Integer> winningIds = new ArrayList<>();
         for (Toy toy : toys) {
             int random = new Random().nextInt(100) + 1;
@@ -99,16 +104,7 @@ public class ToyStore {
         }
     }
 
-    private int getNextId() {
-        int maxId = 0;
-        for (Toy toy : toys) {
-            if (toy.getId() > maxId) {
-                maxId = toy.getId();
-            }
-        }
-        return maxId + 1;
-    }
-
+    
     private void log(String message) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(logFile, true))) {
             writer.println(new Date() + ": " + message);

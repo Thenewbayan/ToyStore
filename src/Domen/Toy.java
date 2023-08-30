@@ -2,6 +2,7 @@ package Domen;
 
 
 public class Toy {
+    private static int nextId = 1;
     private String name;
     private int id;
     private int probability;
@@ -13,6 +14,22 @@ public class Toy {
         this.probability = probability;
         this.quantity = quantity;
     }
+
+    public Toy(String name, int probability, int quantity) {
+        this.name = name;
+        this.probability = probability;
+        this.quantity = quantity;
+        this.id = nextId++; // присваивание id и увеличение счетчика
+    }
+
+    public static void setNextId(int id) {
+        nextId = id;
+    }
+
+    public static int getNextId() {
+        return nextId;
+    }
+
 
     public String getName() {
         return name;

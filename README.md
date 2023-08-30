@@ -1,18 +1,21 @@
-## Getting Started
+## Описание
+* Программа "Магазин игрушек" написана в рамках аттестации по пройденному обучению.
+* Для начала работы необходимо скачать репозиторий на ПК.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Начало работы
+* Перед началом работы необходимо в файле toys.txt(находится в корне проекта) добавить необходимое количество игрушек по форме:
+1. Наименование
+2. id
+3. вероятность выйгрыша
+4. количество игрушек
+* Добавлять игрушки в загрузочном файле необязательно
+* Для начала работы: запустить файл ToyStoreApp.java и в меню выбрать "загрузить из файла" или добавить игрушки через консоль.
+* Программа осуществляет логгирование в файл log.txt, для коректной работы программы рекомендуется переодически его очищать.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
