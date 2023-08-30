@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import Domen.ToyStore;
+import Exceptions.InvalidProbability;
 
 public class ToyStoreApp {
     private static Scanner scanner = new Scanner(System.in);
@@ -17,21 +18,26 @@ public class ToyStoreApp {
             System.out.println("4. Remove all toys");
             System.out.println("5. Play");
             System.out.println("6. Exit");
+            System.out.println("7. Show contain");
             System.out.print("Enter choice: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
             switch (choice) {
                 case 1:
-                    // System.out.print("Enter file name: ");
-                    // String fileName = scanner.nextLine();
-                    toyStore.loadToys("toys.txt");
+                    toyStore.loadToys();
                     break;
                 case 2:
                     System.out.print("Enter toy name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter probability of winning (0-100): ");
                     int probability = scanner.nextInt();
+                    if (probability>=100){
+
+                    }
+                       
+                    //(InvalidProbability e)                       
+                    
                     System.out.print("Enter quantity: ");
                     int quantity = scanner.nextInt();
                     scanner.nextLine();
@@ -51,6 +57,9 @@ public class ToyStoreApp {
                     break;
                 case 6:
                     System.exit(0);
+                    break;
+                case 7:
+                    toyStore.show();
                     break;
                 default:
                     System.out.println("Invalid choice");

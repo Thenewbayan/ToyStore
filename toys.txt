@@ -1,0 +1,2 @@
+Teddy bear,1,80,10
+Lego set,2,50,5

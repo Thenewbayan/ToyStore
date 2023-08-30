@@ -33,4 +33,9 @@ public class Toy {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        return "Toy [name=" + name + ", id=" + id + ", probability=" + probability + ", quantity=" + quantity + "]";
+    }
 }

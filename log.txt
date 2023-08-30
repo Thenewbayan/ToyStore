@@ -5,3 +5,53 @@ Wed Aug 30 19:41:42 MSK 2023: All toys removed
 Wed Aug 30 19:42:09 MSK 2023: Error loading toys: "toys.txt" (Нет такого файла или каталога)
 Wed Aug 30 19:50:19 MSK 2023: Error loading toys: toys.txt (Нет такого файла или каталога)
 Wed Aug 30 19:52:41 MSK 2023: All toys removed
+Wed Aug 30 20:11:22 MSK 2023: No toys won
+Wed Aug 30 20:11:36 MSK 2023: Error loading toys: toys.txt (Нет такого файла или каталога)
+Wed Aug 30 20:13:18 MSK 2023: New toy added: Doll, ID: 1
+Wed Aug 30 20:13:21 MSK 2023: Toy won: Doll, ID: 1
+Wed Aug 30 20:29:54 MSK 2023: Toys loaded from file: toys.txt
+Wed Aug 30 20:30:08 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 20:56:13 MSK 2023: Toys loaded from file: toys.txt
+Wed Aug 30 20:56:17 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=10]
+Wed Aug 30 20:56:17 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=5]
+Wed Aug 30 20:56:24 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:13:17 MSK 2023: Toys loaded from file: toys.txt
+Wed Aug 30 21:13:20 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=10]
+Wed Aug 30 21:13:20 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=5]
+Wed Aug 30 21:13:25 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:13:29 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:13:30 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:13:31 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:13:33 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=7]
+Wed Aug 30 21:13:33 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=4]
+Wed Aug 30 21:17:56 MSK 2023: Toys loaded from file: toys.txt
+Wed Aug 30 21:18:01 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=10]
+Wed Aug 30 21:18:01 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=5]
+Wed Aug 30 21:18:03 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:18:07 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:18:12 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:15 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:17 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:18 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:18:19 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:20 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:21 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:18:22 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:22 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:25 MSK 2023: Toy won: Lego set, ID: 2
+Wed Aug 30 21:18:26 MSK 2023: Toy won but out of stock: Lego set, ID: 2
+Wed Aug 30 21:18:39 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=3]
+Wed Aug 30 21:18:39 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=0]
+Wed Aug 30 21:18:43 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:45 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:46 MSK 2023: Toy won: Teddy bear, ID: 1
+Wed Aug 30 21:18:47 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
+Wed Aug 30 21:18:50 MSK 2023: No toys won
+Wed Aug 30 21:18:53 MSK 2023: Toy won but out of stock: Lego set, ID: 2
+Wed Aug 30 21:18:57 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
+Wed Aug 30 21:19:03 MSK 2023: Toy won but out of stock: Lego set, ID: 2
+Wed Aug 30 21:19:04 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
+Wed Aug 30 21:19:05 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
+Wed Aug 30 21:19:05 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
+Wed Aug 30 21:19:06 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=0]
+Wed Aug 30 21:19:06 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=0]
