@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 import Domen.ToyStore;
-import Exceptions.InvalidProbability;
 
 public class ToyStoreApp {
     private static Scanner scanner = new Scanner(System.in);
@@ -28,20 +27,29 @@ public class ToyStoreApp {
                     toyStore.loadToys();
                     break;
                 case 2:
-                    System.out.print("Enter toy name: ");
-                    String name = scanner.nextLine();
-                    System.out.print("Enter probability of winning (0-100): ");
-                    int probability = scanner.nextInt();
-                    if (probability>=100){
-
+                    while (true) {
+                        System.out.println("Enter toy name: ");
+                        String name = scanner.nextLine();
+                        System.out.println("Enter probability of winning (0-100): ");
+                        int probability = scanner.nextInt();
+                        if (probability>=100){
+                            System.out.println("Invalid probability entered. Probability must be between 0 and 99.");
+                            continue;
+                        }
+                        System.out.println("Enter quantity: ");
+                        int quantity;
+                        try {
+                            quantity = scanner.nextInt();
+                            scanner.nextLine();
+                            if (quantity < 1) {
+                                throw new NumberFormatException();
+                            }
+                            toyStore.addToy(name, probability, quantity);
+                            break;
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid quantity entered. Quantity must be a positive integer.");
+                        }
                     }
-                       
-                    //(InvalidProbability e)                       
-                    
-                    System.out.print("Enter quantity: ");
-                    int quantity = scanner.nextInt();
-                    scanner.nextLine();
-                    toyStore.addToy(name, probability, quantity);
                     break;
                 case 3:
                     System.out.print("Enter ID of toy to remove: ");

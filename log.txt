@@ -55,3 +55,12 @@ Wed Aug 30 21:19:05 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
 Wed Aug 30 21:19:05 MSK 2023: Toy won but out of stock: Teddy bear, ID: 1
 Wed Aug 30 21:19:06 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=0]
 Wed Aug 30 21:19:06 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=0]
+Wed Aug 30 21:55:01 MSK 2023: New toy added: Cat, ID: 1
+Wed Aug 30 21:55:56 MSK 2023: New toy added: Dog, ID: 2
+Wed Aug 30 21:56:14 MSK 2023: Show contain: Toy [name=Cat, id=1, probability=20, quantity=2]
+Wed Aug 30 21:56:14 MSK 2023: Show contain: Toy [name=Dog, id=2, probability=50, quantity=3]
+Wed Aug 30 21:56:20 MSK 2023: Toys loaded from file: toys.txt
+Wed Aug 30 21:56:23 MSK 2023: Show contain: Toy [name=Cat, id=1, probability=20, quantity=2]
+Wed Aug 30 21:56:23 MSK 2023: Show contain: Toy [name=Dog, id=2, probability=50, quantity=3]
+Wed Aug 30 21:56:23 MSK 2023: Show contain: Toy [name=Teddy bear, id=1, probability=80, quantity=10]
+Wed Aug 30 21:56:23 MSK 2023: Show contain: Toy [name=Lego set, id=2, probability=50, quantity=5]
